@@ -2,18 +2,25 @@
 <html en = "lang">
     <head>
         <title> Search</title>
+        <style>
+        
+    </style>
     </head>
-    <element>
-        <p Style = "text-align:right;">Images</p> <!--revisit as this is temporary-->
-    </element>
-    <body Style =>
-        <div style = "text-align:center;">
-            <img src = "googleLogo.png">
+    <body>
+        <div>
+            <p Style = "text-align:right;">Images</p> <!--revisit as this is temporary-->
         </div>
-        <form Style = "text-align:center;" action = "https://www.google.com/search">
-            <input type = "text" name="q">
-            <input Style = "text-align:center;" type ="submit" value ="Google Search" value = "Image Search">
-        </form>
-
+        <div Style = "text-align: center; margin: 210px;">
+            <div>
+                <img style= "padding: 21px" src = "googleLogo.png">
+            </div>
+            <form action = "https://www.google.com/search">
+                <input Style = "width: 600px; height: 30px;" type = "text" name="q">
+            <div style="margin: 20px;">
+                    <input Style = "text-align: center; margin:5px; padding: 5px; width:125px; height: 30px;" type ="submit" value ="Google Search" value = "Image Search">
+                    <input Style = "text-align: center; padding: 7px; width:135px; height: 30px;" type ="submit" value ="I'm Feeling Lucky"> <!--consider adding another form tag to implement different button functonality-->
+            </div>
+            </form>
+        </div>
     </body>
 </html>
