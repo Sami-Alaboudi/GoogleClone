@@ -2,24 +2,75 @@
 <html en = "lang">
     <head>
         <title> Search</title>
+        <meta name = "viewport" content = "width-device-width,intial-scale = 1.0">
         <style>
+            
+       
+            body {
+                margin: 0; /* Remove default body margin */
+            }
+            #container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 20vh auto; /* Adjust vertical and horizontal margin as needed */
+                box-sizing: border-box; /* Include padding and border in width calculation */
 
+                padding: 20px; /* Add padding for better spacing */
+            }
+
+            #searchbar {
+                flex: 1;
+                padding: 10px 14px; /* Adjust padding for better appearance */
+                border: 1px solid #dfe1e5;
+                border-radius: 24px;
+                box-sizing: border-box; /* Include padding and border in width calculation */
+                min-width: 394px;
+                width: 584px;
+                max-width: 584px;
+                box-sizing: border-box; /* Include padding and border in width calculation */
+
+                font-size:16px; /* Increase font size for better readability */
+            }
+
+            .box {
+                text-align: center;
+                margin: 5px;
+                padding: 5px;
+                width: 125px;
+                height: 36px;
+                font-size: 14px;
+                font-family: Arial, sans-serif;
+                border: 1px solid #f8f9fa;
+                border-radius: 4px;
+                cursor: pointer;
+                color: #3c4043;
+                user-select: none;
+            }
+            @media (max-width: 400px) {
+                    #searchbar {
+                        flex-direction: column;
+                        align-items: center;
+                        width: 384;
+                    }
+            }
+
+        </style>
         
-    </style>
     </head>
     <body>
         <div>
             <p Style = "text-align:right;">Images</p> <!--revisit as this is temporary-->
         </div>
-        <div Style = "text-align: center; margin: 210px;">
+        <div id = container Style = "text-align: center; ">
             <div>
                 <img style= "padding: 21px" src = "googleLogo.png">
             </div>
             <form action = "https://www.google.com/search">
-                <input Style = "width: 584px; min-height: 39px;border:1px solid #dfe1e5; box-shadow: none; border-radius: 24px;" type = "text" name="q">
-            <div style="margin: 20px; ">
-                    <input Style = "text-align: center; margin:5px; padding: 5px; width:125px; height: 36px;font-size:14px;font-family:arial,sans-serif;border:1px solid #f8f9fa; border-radius: 4px;cursor: pointer; color: #3c4043; user-select: none; " type ="submit" value ="Google Search" value = "Image Search">
-                    <input Style = "text-align: center; margin:5px; padding: 5px; width:125px; height: 36px;font-size:14px;font-family:arial,sans-serif;border:1px solid #f8f9fa; border-radius: 4px;cursor: pointer; color: #3c4043; user-select: none; " type ="submit" value ="I'm Feeling Lucky"> <!--consider adding another form tag to implement different button functonality-->
+                <input  id = searchbar type = "text" name="q">
+            <div >
+                    <input Class = box type ="submit" value ="Google Search" value = "Image Search">
+                    <input  Class = box type ="submit" value ="I'm Feeling Lucky"> <!--consider adding another form tag to implement different button functonality-->
             </div>
             </form>
             <!--whats left: -need to implement I'm Feeling Lucky functionality
