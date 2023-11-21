@@ -59,21 +59,21 @@
         
     </head>
     <body>
-        <div>
-            <p Style = "text-align:right;">Images</p> <!--revisit as this is temporary-->
+        <div >
+            <p Style = "text-align:right; padding-left: 15 px;" >Images</p> <!--revisit as this is temporary-->
         </div>
         <div id = container Style = "text-align: center; ">
             <div>
                 <img style= "padding: 21px" src = "googleLogo.png">
             </div>
-            <form action = "https://www.google.com/search">
+            <form action = "https://www.google.com/search" autocomplete ="off"> <!--what does method and role ? attributes do?-->
                 <input  id = searchbar type = "text" name="q">
-            <div >
+            <div>
                     <input Class = box type ="submit" value ="Google Search" value = "Image Search">
-                    <input  Class = box type ="submit" value ="I'm Feeling Lucky"> <!--consider adding another form tag to implement different button functonality-->
+                    <input  Class = box type ="submit" value ="I'm Feeling Lucky" name = "btnI"> <!--consider adding another form tag to implement different button functonality-->
             </div>
             </form>
-            <!--whats left: -need to implement I'm Feeling Lucky functionality
+            <!--whats left: -need to implement I'm Feeling Lucky functionality (Just did)
                             -need to add search bar icons
                             - need to add upper banner
                             - need to link images.html to this one
